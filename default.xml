@@ -8,7 +8,7 @@
            fetch="https://github.com/Whitehawkx" />
 
   <remote  name="muppets"
-           fetch="https://github.com/themuppets" />
+           fetch="https://github.com/TheMuppets" />
 
   <default revision="refs/tags/android-4.4_r1"
            remote="aosp"
