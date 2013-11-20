@@ -13,7 +13,7 @@
   <remote  name="muppets"
            fetch="https://github.com/TheMuppets" />
 
-  <default revision="refs/tags/android-4.4_r1.1"
+  <default revision="refs/tags/android-4.4_r1.2"
            remote="aosp"
            sync-j="4" />
 
@@ -22,7 +22,7 @@
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" />
-  <project path="bionic" name="platform/bionic" groups="pdk" />
+  <project path="bionic" name="android_bionic" remote="cm" revision="cm-11.0" groups="pdk" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
@@ -242,13 +242,13 @@
   <project path="external/valgrind" name="platform/external/valgrind" groups="pdk" />
   <project path="external/webp" name="platform/external/webp" />
   <project path="external/webrtc" name="platform/external/webrtc" groups="pdk" />
-  <project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" groups="pdk" />
+  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="cm" revision="cm-11.0" groups="pdk" />
   <project path="external/xmlwriter" name="platform/external/xmlwriter" />
   <project path="external/xmp_toolkit" name="platform/external/xmp_toolkit" />
   <project path="external/yaffs2" name="platform/external/yaffs2" groups="pdk" />
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zxing" name="platform/external/zxing" />
-  <project path="frameworks/av" name="frameworks_av" remote="hawk" revision="kitkat-test" groups="pdk" />
+  <project path="frameworks/av" name="frameworks_av" remote="hawk" revision="kitkat-caf" groups="pdk" />
   <project path="frameworks/base" name="frameworks_base" remote="hawk" revision="kitkat-test" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
@@ -256,7 +256,7 @@
   <project path="frameworks/ex" name="platform/frameworks/ex" />
   <project path="frameworks/mff" name="platform/frameworks/mff" />
   <project path="frameworks/ml" name="platform/frameworks/ml" />
-  <project path="frameworks/native" name="frameworks_native" remote="hawk" revision="kitkat" groups="pdk" />
+  <project path="frameworks/native" name="frameworks_native" remote="hawk" revision="kitkat-caf" groups="pdk" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" />
   <project path="frameworks/opt/carddav" name="platform/frameworks/opt/carddav" />
   <project path="frameworks/opt/colorpicker" name="platform/frameworks/opt/colorpicker" />
@@ -281,8 +281,8 @@
   <project path="hardware/broadcom/libbt" name="hardware_broadcom_libbt" remote="hawk" revision="kitkat" groups="pdk" />
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="broadcom_wlan" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
-  <project path="hardware/libhardware" name="hardware_libhardware" remote="hawk" revision="kitkat" groups="pdk" />
-  <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" remote="hawk" revision="kitkat" groups="pdk" />
+  <project path="hardware/libhardware" name="hardware_libhardware" remote="hawk" revision="kitkat-caf" groups="pdk" />
+  <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" remote="hawk" revision="kitkat-caf" groups="pdk" />
   <project path="hardware/qcom/audio" name="hardware_qcom_audio" remote="hawk" revision="kitkat" groups="qcom" />
   <project path="hardware/qcom/bt" name="platform/hardware/qcom/bt" groups="qcom" />
   <project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" groups="qcom" />
@@ -425,7 +425,7 @@
   <project path="system/media" name="platform/system/media" groups="pdk" />
   <project path="system/netd" name="platform/system/netd" groups="pdk" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
-  <project path="system/vold" name="platform/system/vold" groups="pdk" />
+  <project path="system/vold" name="android_system_vold" remote="cm" revision="cm-11.0" groups="pdk" />
   <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" />
   <project path="tools/adt/idea" name="platform/tools/adt/idea" groups="notdefault,tools" />
   <project path="tools/base" name="platform/tools/base" groups="notdefault,tools" />
@@ -443,10 +443,14 @@
   <project path="device/htc/m7-common" name="device_htc_m7-common" remote="hawk" revision="kitkat" />
   <project path="device/htc/msm8960-common" name="device_htc_msm8960-common" remote="hawk" revision="kitkat" />
   <project path="kernel/htc/m7" name="kernel_htc_m7" remote="hawk" revision="kitkat" />
-  <project path="hardware/qcom/audio-caf" name="hardware_qcom_audio-caf" remote="hawk" revision="kitkat" />
-  <project path="hardware/qcom/display-caf" name="hardware_qcom_display-caf" remote="hawk" revision="kitkat" />
-  <project path="hardware/qcom/media-caf" name="hardware_qcom_media-caf" remote="hawk" revision="kitkat" />
+  <project path="hardware/qcom/audio-caf" name="hardware_qcom_audio-caf" remote="hawk" revision="kitkat-caf" />
+  <project path="hardware/qcom/display-caf" name="hardware_qcom_display-caf" remote="hawk" revision="kitkat-caf" />
+  <project path="hardware/qcom/media-caf" name="hardware_qcom_media-caf" remote="hawk" revision="kitkat-caf" />
   <project path="vendor/aokp" name="vendor_aokp" remote="hawk" revision="kitkat-test" />
   <project path="vendor/htc" name="proprietary_vendor_htc" remote="muppets" revision="cm-11.0" />
+
+<!-- root -->
+  <project path="external/koush/Superuser" name="Superuser" remote="cm" revision="cm-10.2" />
+  <project path="external/koush/Widgets" name="Widgets" remote="cm" revision="cm-10.2" />
 
 </manifest>
