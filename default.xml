@@ -304,7 +304,7 @@
   <project path="libnativehelper" name="platform/libnativehelper" groups="pdk-java" />
   <project path="ndk" name="platform/ndk" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />
-  <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="hawk" revision="kitkat" />
+  <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="hawk" revision="kitkat" />
   <project path="packages/apps/Browser" name="platform/packages/apps/Browser" />
   <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" />
   <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" />
@@ -337,7 +337,7 @@
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
-  <project path="packages/apps/Settings" name="platform/packages/apps/Settings" remote="hawk" revision="kitkat" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="hawk" revision="kitkat" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
@@ -371,7 +371,6 @@
   <project path="packages/wallpapers/MusicVisualization" name="platform/packages/wallpapers/MusicVisualization" />
   <project path="packages/wallpapers/NoiseField" name="platform/packages/wallpapers/NoiseField" />
   <project path="packages/wallpapers/PhaseBeam" name="platform/packages/wallpapers/PhaseBeam" />
-  <project path="platform_manifest" name="platform_manifest" remote="hawk" revision="kitkat" /> 
   <project path="pdk" name="platform/pdk" groups="pdk" />
   <project path="prebuilts/clang/darwin-x86/3.1" name="platform/prebuilts/clang/darwin-x86/3.1" groups="pdk,darwin" />
   <project path="prebuilts/clang/darwin-x86/3.2" name="platform/prebuilts/clang/darwin-x86/3.2" groups="pdk,darwin" />
@@ -439,7 +438,7 @@
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
 
-<!-- additionals for HTC One -->
+  <!-- additionals for HTC One -->
   <project path="device/htc/m7tmo" name="device_htc_m7tmo" remote="hawk" revision="kitkat" />
   <project path="device/htc/m7-common" name="device_htc_m7-common" remote="hawk" revision="kitkat" />
   <project path="device/htc/msm8960-common" name="device_htc_msm8960-common" remote="hawk" revision="kitkat" />
@@ -447,11 +446,14 @@
   <project path="hardware/qcom/audio-caf" name="hardware_qcom_audio-caf" remote="hawk" revision="kitkat" />
   <project path="hardware/qcom/display-caf" name="hardware_qcom_display-caf" remote="hawk" revision="kitkat" />
   <project path="hardware/qcom/media-caf" name="hardware_qcom_media-caf" remote="hawk" revision="kitkat" />
-  <project path="vendor/aokp" name="vendor_aokp" remote="hawk" revision="kitkat-test" />
+  <project path="vendor/aokp" name="vendor_aokp" remote="hawk" revision="kitkat" />
   <project path="vendor/htc" name="proprietary_vendor_htc" remote="muppets" revision="cm-11.0" />
 
-<!-- root -->
+  <!-- root -->
   <project path="external/koush/Superuser" name="Superuser" remote="cm" revision="cm-10.2" />
   <project path="external/koush/Widgets" name="Widgets" remote="cm" revision="cm-10.2" />
+
+  <!--  manifest -->
+  <project path="platform_manifest" name="platform_manifest" remote="hawk" revision="kitkat" /> 
 
 </manifest>
