@@ -450,8 +450,8 @@
   <project path="vendor/htc" name="proprietary_vendor_htc" remote="muppets" revision="cm-11.0" />
 
   <!-- root -->
-  <project path="external/koush/Superuser" name="Superuser" remote="cm" revision="cm-10.2" />
-  <project path="external/koush/Widgets" name="Widgets" remote="cm" revision="cm-10.2" />
+  <project path="external/koush/Superuser" name="Superuser" remote="cm" revision="cm-11.0" />
+  <project path="external/koush/Widgets" name="Widgets" remote="cm" revision="cm-11.0" />
 
   <!--  manifest -->
   <project path="platform_manifest" name="platform_manifest" remote="hawk" revision="kitkat" /> 
