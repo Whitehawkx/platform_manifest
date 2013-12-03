@@ -454,7 +454,7 @@
   <project path="hardware/qcom/audio-caf" name="hardware_qcom_audio-caf" remote="hawk" revision="kitkat" />
   <project path="hardware/qcom/display-caf" name="hardware_qcom_display-caf" remote="hawk" revision="kitkat" />
   <project path="hardware/qcom/media-caf" name="hardware_qcom_media-caf" remote="hawk" revision="kitkat" />
-  <project path="vendor/aokp" name="vendor_aokp" remote="hawk" revision="kitkat" />
+  <project path="vendor/behelit" name="vendor_behelit" remote="hawk" revision="kitkat" />
   <project path="vendor/htc" name="proprietary_vendor_htc" remote="muppets" revision="cm-11.0" />
 
   <!-- root -->
