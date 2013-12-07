@@ -17,11 +17,11 @@
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="build" remote="hawk" revision="crimson" groups="pdk" >
+  <project path="build" name="build" remote="hawk" revision="kitkat" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
-  <project path="art" name="platform/art" />
+  <project path="art" name="art" remote="hawk" revision="kitkat" />
   <project path="bionic" name="android_bionic" remote="cm" revision="cm-11.0" groups="pdk" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
