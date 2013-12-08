@@ -456,7 +456,7 @@
   <project path="kernel/htc/m7" name="kernel_htc_m7" remote="hawk" revision="kitkat" />
   <project path="hardware/qcom/audio-caf" name="android_hardware_qcom_audio-caf" remote="cm" revision="cm-11.0" />
   <project path="hardware/qcom/display-caf" name="android_hardware_qcom_display-caf" remote="cm" revision="cm-11.0" />
-  <project path="hardware/qcom/media-caf" name="android_hardware_qcom_media-caf" remote="cm" revision="cm-11.0 " />
+  <project path="hardware/qcom/media-caf" name="android_hardware_qcom_media-caf" remote="cm" revision="cm-11.0" />
   <project path="vendor/behelit" name="vendor_behelit" remote="hawk" revision="kitkat" />
   <project path="vendor/htc" name="proprietary_vendor_htc" remote="muppets" revision="cm-11.0" />
 
